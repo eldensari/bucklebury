@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icons/icons/png/256x256.png" alt="Bucklebury" width="48" />
+  <img src="assets/icons/icons/png/256x256.png" alt="Bucklebury" width="80" />
 </p>
 
 <h1 align="center">Bucklebury</h1>
