@@ -1,0 +1,56 @@
+{
+  "name": "bucklebury",
+  "version": "0.1.0",
+  "description": "Branch your thinking. Merge your ideas.",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "vite build && electron-builder",
+    "electron:build:mac": "vite build && electron-builder --mac",
+    "electron:build:win": "set CSC_IDENTITY_AUTO_DISCOVERY=false && vite build && electron-builder --win",
+    "electron:build:linux": "vite build && electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.bucklebury.app",
+    "productName": "Bucklebury",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "build/**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icons/icons/mac/icon.icns",
+      "category": "public.app-category.productivity"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/icons/win/icon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icons/icons/png/512x512.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "electron-icon-builder": "^2.0.1",
+    "vite": "^6.2.4",
+    "wait-on": "^8.0.3"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
