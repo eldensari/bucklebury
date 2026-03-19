@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/your-username/bucklebury/releases/latest">Download for Windows</a> · macOS and Linux coming soon
+  <a href="https://github.com/eldensari/bucklebury/releases/latest">Download for Windows</a> · macOS and Linux coming soon
 </p>
 
 ---
@@ -53,7 +53,7 @@ A thinking tool that manages LLM conversations like Git. Every exchange is a com
 
 | Platform | Status |
 |----------|--------|
-| Windows | [Download .exe](https://github.com/your-username/bucklebury/releases/latest) |
+| Windows | [Download .exe](https://github.com/eldensari/bucklebury/releases/latest) |
 | macOS | Coming soon |
 | Linux | Coming soon |
 
